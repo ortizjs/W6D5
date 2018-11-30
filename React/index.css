@@ -1,13 +1,23 @@
-.clock {
+.time {
   text-align: center;
   font-family: "Kumar One Outline";
-  font-size: 90px;
+  font-size: 25px;
   margin: 0;
 }
 
-.curtime {
+.time-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container {
+  width: 60%;
+  background: red;
+  margin: 0 auto;
+}
+
+.clock-title {
   text-align: center;
-  font-family: "Kumar One Outline";
-  font-size: 40px;
-  margin: 0;
+  font-size: 48px;
+  margin: 2px;
 }

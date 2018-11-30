@@ -6,7 +6,7 @@ class Clock extends React.Component {
     this.state = {
       time: new Date()
     };
-    console.log(this.state.time);
+    // console.log(this.state.time);
     this.interval = 0;
     this.tick = this.tick.bind(this);
   }
@@ -34,15 +34,15 @@ class Clock extends React.Component {
     let year = this.state.time.getYear();
     return (
       <div>
-        Clock
-        <div>
-          <div>
-            <h1 className ='clock'>Time:</h1>
-            <p className ='curtime'>{hours}:{minutes}:{seconds}</p>
+        <p className="clock-title">Clock</p>
+        <div className="main-container">
+          <div className="time-container">
+            <h1 className ='time'>Time:</h1>
+            <p className ='time'>{hours}:{minutes}:{seconds}</p>
           </div>
-          <div>
-            <h1 className ='clock'>Date:</h1>
-            <p className ='curtime'>{days[day]} {months[month]} {date} {year + 1900}</p>
+          <div className="time-container">
+            <h1 className ='time'>Date:</h1>
+            <p className ='time'>{days[day]} {months[month]} {date} {year + 1900}</p>
           </div>
         </div>
       </div>
