@@ -1,0 +1,13 @@
+.clock {
+  text-align: center;
+  font-family: "Kumar One Outline";
+  font-size: 90px;
+  margin: 0;
+}
+
+.curtime {
+  text-align: center;
+  font-family: "Kumar One Outline";
+  font-size: 40px;
+  margin: 0;
+}

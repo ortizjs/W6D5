@@ -27,10 +27,10 @@ class Clock extends React.Component {
     let seconds = this.state.time.getSeconds();
     return (
       <div>
-      <h1>Clock</h1>
-      <span>{hours}:{minutes}:{seconds}</span>
-    </div>
-  );
+        <h1 className ='clock'>Clock</h1>
+        <p className ='curtime'>{hours}:{minutes}:{seconds}</p>
+      </div>
+    );
 
   }
 }
