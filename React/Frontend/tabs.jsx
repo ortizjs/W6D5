@@ -11,7 +11,7 @@ class Tab extends React.Component {
 
   render(){
     return (
-
+      <Tab.Header values = {this.props.values}/>
     );
   }
 }
@@ -20,10 +20,10 @@ Tab.Header = class Header extends React.Component{
     render(){
         return(
             <div>
-                Tab Header
+                {this.props.values.map(value => <h1>{value["title"]}</h1>)}
             </div>
         );
     }
-}
+};
 
 export default Tab;

@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Clock from './clock';
+import Tab from './tabs';
 const Root = () => (
   <div>
     <Clock/>
-    <Tab values={[{one: "I am the first tab"}, {two: "I am the second tab"}, {three: "I am the third tab"}]}/>
+    <Tab values={[{title:"one", value:"I am the first tab"}, {title:"two", value:"I am the second tab"}, {title:"three", value:"I am the third tab"}]}/>
   </div>
 );
 
